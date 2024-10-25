@@ -1,0 +1,26 @@
+{
+  "name": "@skidy89/mysql-baileys",
+  "version": "0.0.8",
+  "description": "sqlite implementation for baileys",
+  "main": "lib/index.js",
+	"types": "lib/index.d.ts",
+  "files": [
+		"lib/*"
+	],
+  "scripts": {
+		"release": "release-it",
+		"build": "tsc",
+		"prepack": "tsc",
+		"prepare": "tsc",
+		"build:tsc": "tsc",
+		"build:docs": "typedoc",
+		"build:all": "tsc && typedoc"
+	},
+  "author": "skidy89",
+  "license": "ISC",
+  "dependencies": {
+    "@skidy89/baileys": "^6.7.8",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
